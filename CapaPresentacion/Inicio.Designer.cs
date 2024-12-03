@@ -57,7 +57,7 @@
             this.menuAcercaDe});
             this.menu.Location = new System.Drawing.Point(0, 59);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(927, 73);
+            this.menu.Size = new System.Drawing.Size(1220, 73);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -166,7 +166,7 @@
             this.menuTitulo.Location = new System.Drawing.Point(0, 0);
             this.menuTitulo.Name = "menuTitulo";
             this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuTitulo.Size = new System.Drawing.Size(927, 59);
+            this.menuTitulo.Size = new System.Drawing.Size(1220, 59);
             this.menuTitulo.TabIndex = 1;
             this.menuTitulo.Text = "menuStrip2";
             // 
@@ -187,7 +187,7 @@
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 132);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(927, 510);
+            this.contenedor.Size = new System.Drawing.Size(1220, 480);
             this.contenedor.TabIndex = 3;
             // 
             // label2
@@ -218,12 +218,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 642);
+            this.ClientSize = new System.Drawing.Size(1220, 612);
+            this.Controls.Add(this.contenedor);
+            this.Controls.Add(this.menu);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.contenedor);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menu);
             this.Controls.Add(this.menuTitulo);
             this.MainMenuStrip = this.menu;
             this.Name = "Inicio";
