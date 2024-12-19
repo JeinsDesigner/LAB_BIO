@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CN_Detalles_Ordenes.cs" />
+    <Compile Include="CN_Ordenes_Analisis.cs" />
+    <Compile Include="CN_Pacientes.cs" />
     <Compile Include="CN_Permisos.cs" />
     <Compile Include="CN_Roles.cs" />
+    <Compile Include="CN_Tipos_Analisis.cs" />
     <Compile Include="CN_Usuarios.cs" />
+    <Compile Include="CN_Variables_Analisis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

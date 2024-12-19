@@ -12,5 +12,6 @@ namespace CapaEntidad
         public Tipos_Analisis oTipo_Analisis { get; set; }
         public string nombre_variable { get; set; }
         public string unidad { get; set; }
+        public string referencia { get; set; }
     }
 }

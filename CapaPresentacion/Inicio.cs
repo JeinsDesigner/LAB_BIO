@@ -80,11 +80,6 @@ namespace CapaPresentacion
             abrirFormulario((IconMenuItem)sender, new frmUsuarios());
         }
 
-        private void menuOrdenesAnalisis_Click(object sender, EventArgs e)
-        {
-            abrirFormulario((IconMenuItem)sender, new frmAnalisis());
-        }
-
         private void menuPacientes_Click(object sender, EventArgs e)
         {
             abrirFormulario((IconMenuItem)sender, new frmPacientes());
@@ -95,11 +90,6 @@ namespace CapaPresentacion
             abrirFormulario((IconMenuItem)sender, new frmReportes());
         }
 
-        private void menuResultados_Click(object sender, EventArgs e)
-        {
-            abrirFormulario((IconMenuItem)sender, new frmResultados());
-        }
-
         private void menuTiposDeAnalisis_Click(object sender, EventArgs e)
         {
             abrirFormulario((IconMenuItem)sender, new frmTiposAnalisis());
@@ -108,6 +98,26 @@ namespace CapaPresentacion
         private void menuAcercaDe_Click(object sender, EventArgs e)
         {
             abrirFormulario((IconMenuItem)sender, new frmAcercaDe());
+        }
+
+        private void subMenuNuevaOrden_Click(object sender, EventArgs e)
+        {
+            abrirFormulario((IconMenuItem)sender, new frmAgregarAnalisis(usuariosActual));
+        }
+
+        private void subMenuSubirResultado_Click(object sender, EventArgs e)
+        {
+            abrirFormulario((IconMenuItem)sender, new frmSubirResultados());
+        }
+
+        private void subMenuBuscarResultado_Click(object sender, EventArgs e)
+        {
+            abrirFormulario((IconMenuItem)sender, new frmBuscarResultados());
+        }
+
+        private void subMenuBuscarOrden_Click(object sender, EventArgs e)
+        {
+            abrirFormulario((IconMenuItem)sender, new frmBuscarAnalisis());
         }
     }
 }

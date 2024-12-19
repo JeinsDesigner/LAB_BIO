@@ -88,7 +88,6 @@
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(233, 20);
             this.txtClave.TabIndex = 4;
-            this.txtClave.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -98,7 +97,6 @@
             this.label3.Size = new System.Drawing.Size(100, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nro. de Documento";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -108,7 +106,6 @@
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Contraseña";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnIngresar
             // 
@@ -171,7 +168,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

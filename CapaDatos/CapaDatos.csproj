@@ -42,9 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CD_Detalles_Ordenes.cs" />
+    <Compile Include="CD_Ordenes_Analisis.cs" />
+    <Compile Include="CD_Pacientes.cs" />
     <Compile Include="CD_Permisos.cs" />
     <Compile Include="CD_Roles.cs" />
+    <Compile Include="CD_Tipos_Analisis.cs" />
     <Compile Include="CD_Usuarios.cs" />
+    <Compile Include="CD_Variables_Analisis.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

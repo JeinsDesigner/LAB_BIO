@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using CapaEntidad;
 using System.Collections;
+using System.Net;
 
 namespace CapaDatos
 {
@@ -90,6 +91,60 @@ namespace CapaDatos
             }
 
             return idUsuarioGenerado;
+        }
+
+        public Usuarios BuscarPorId(int id, out string mensaje)
+        {
+            mensaje = String.Empty;
+            Usuarios objUsuario = null;
+
+            using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
+            {
+                try
+                {
+                    StringBuilder query = new StringBuilder();
+                    query.AppendLine("select usuario_id, nombres, apellidos, telefono, rol_id, dni, email, clave from USUARIOS");
+                    query.AppendLine("WHERE usuario_id = @id");
+
+                    SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.CommandType = CommandType.Text;
+                    oconexion.Open();
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.HasRows)
+                        {
+                            while (dr.Read())
+                            {
+                                objUsuario = new Usuarios()
+                                {
+                                    usuario_id = Convert.ToInt32(dr["usuario_id"]),
+                                    nombres = dr["nombres"].ToString(),
+                                    apellidos = dr["apellidos"].ToString(),
+                                    telefono = dr["telefono"].ToString(),
+                                    oRol = new Roles(){
+                                        rol_id = Convert.ToInt32(dr["rol_id"]),
+                                    },
+                                    dni = dr["dni"].ToString(),
+                                    email = dr["email"].ToString(),
+                                    clave = dr["clave"].ToString(),                                    
+                                };
+                            }
+                        }
+                        else
+                        {
+                            objUsuario = null;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    objUsuario = null;
+                }
+            }
+
+            return objUsuario;
         }
 
         public bool Editar(Usuarios obj, out string mensaje)

@@ -51,6 +51,11 @@ namespace CapaNegocio
             }
         }
 
+        public Usuarios BuscarPorId(int id, out string mensaje)
+        {
+            return objcd_usuarios.BuscarPorId(id, out mensaje);
+        }
+
         public bool Editar(Usuarios obj, out string mensaje)
         {
             mensaje = string.Empty;

@@ -29,18 +29,22 @@
         private void InitializeComponent()
         {
             this.menu = new System.Windows.Forms.MenuStrip();
-            this.menuUsuarios = new FontAwesome.Sharp.IconMenuItem();
-            this.menuOrdenesAnalisis = new FontAwesome.Sharp.IconMenuItem();
-            this.menuPacientes = new FontAwesome.Sharp.IconMenuItem();
-            this.menuResultados = new FontAwesome.Sharp.IconMenuItem();
-            this.menuTiposDeAnalisis = new FontAwesome.Sharp.IconMenuItem();
-            this.menuReportes = new FontAwesome.Sharp.IconMenuItem();
-            this.menuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
+            this.menuUsuarios = new FontAwesome.Sharp.IconMenuItem();
+            this.menuOrdenesAnalisis = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuNuevaOrden = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuBuscarOrden = new FontAwesome.Sharp.IconMenuItem();
+            this.menuPacientes = new FontAwesome.Sharp.IconMenuItem();
+            this.menuResultados = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuSubirResultado = new FontAwesome.Sharp.IconMenuItem();
+            this.subMenuBuscarResultado = new FontAwesome.Sharp.IconMenuItem();
+            this.menuTiposDeAnalisis = new FontAwesome.Sharp.IconMenuItem();
+            this.menuReportes = new FontAwesome.Sharp.IconMenuItem();
+            this.menuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,104 +64,6 @@
             this.menu.Size = new System.Drawing.Size(1220, 73);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
-            // 
-            // menuUsuarios
-            // 
-            this.menuUsuarios.AutoSize = false;
-            this.menuUsuarios.IconChar = FontAwesome.Sharp.IconChar.UserGear;
-            this.menuUsuarios.IconColor = System.Drawing.Color.Black;
-            this.menuUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuUsuarios.IconSize = 50;
-            this.menuUsuarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuUsuarios.Name = "menuUsuarios";
-            this.menuUsuarios.Size = new System.Drawing.Size(122, 69);
-            this.menuUsuarios.Text = "Usuarios";
-            this.menuUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
-            // 
-            // menuOrdenesAnalisis
-            // 
-            this.menuOrdenesAnalisis.AutoSize = false;
-            this.menuOrdenesAnalisis.IconChar = FontAwesome.Sharp.IconChar.Syringe;
-            this.menuOrdenesAnalisis.IconColor = System.Drawing.Color.Black;
-            this.menuOrdenesAnalisis.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuOrdenesAnalisis.IconSize = 50;
-            this.menuOrdenesAnalisis.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuOrdenesAnalisis.Name = "menuOrdenesAnalisis";
-            this.menuOrdenesAnalisis.Size = new System.Drawing.Size(122, 69);
-            this.menuOrdenesAnalisis.Text = "Ordenes Análisis";
-            this.menuOrdenesAnalisis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuOrdenesAnalisis.Click += new System.EventHandler(this.menuOrdenesAnalisis_Click);
-            // 
-            // menuPacientes
-            // 
-            this.menuPacientes.AutoSize = false;
-            this.menuPacientes.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
-            this.menuPacientes.IconColor = System.Drawing.Color.Black;
-            this.menuPacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuPacientes.IconSize = 50;
-            this.menuPacientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuPacientes.Name = "menuPacientes";
-            this.menuPacientes.Size = new System.Drawing.Size(122, 69);
-            this.menuPacientes.Text = "Pacientes";
-            this.menuPacientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuPacientes.Click += new System.EventHandler(this.menuPacientes_Click);
-            // 
-            // menuResultados
-            // 
-            this.menuResultados.AutoSize = false;
-            this.menuResultados.IconChar = FontAwesome.Sharp.IconChar.FlaskVial;
-            this.menuResultados.IconColor = System.Drawing.Color.Black;
-            this.menuResultados.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuResultados.IconSize = 50;
-            this.menuResultados.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuResultados.Name = "menuResultados";
-            this.menuResultados.Size = new System.Drawing.Size(122, 69);
-            this.menuResultados.Text = "Resultados";
-            this.menuResultados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuResultados.Click += new System.EventHandler(this.menuResultados_Click);
-            // 
-            // menuTiposDeAnalisis
-            // 
-            this.menuTiposDeAnalisis.AutoSize = false;
-            this.menuTiposDeAnalisis.IconChar = FontAwesome.Sharp.IconChar.ListUl;
-            this.menuTiposDeAnalisis.IconColor = System.Drawing.Color.Black;
-            this.menuTiposDeAnalisis.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuTiposDeAnalisis.IconSize = 50;
-            this.menuTiposDeAnalisis.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuTiposDeAnalisis.Name = "menuTiposDeAnalisis";
-            this.menuTiposDeAnalisis.Size = new System.Drawing.Size(122, 69);
-            this.menuTiposDeAnalisis.Text = "Tipos de Análisis";
-            this.menuTiposDeAnalisis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuTiposDeAnalisis.Click += new System.EventHandler(this.menuTiposDeAnalisis_Click);
-            // 
-            // menuReportes
-            // 
-            this.menuReportes.AutoSize = false;
-            this.menuReportes.IconChar = FontAwesome.Sharp.IconChar.FileMedical;
-            this.menuReportes.IconColor = System.Drawing.Color.Black;
-            this.menuReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuReportes.IconSize = 50;
-            this.menuReportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuReportes.Name = "menuReportes";
-            this.menuReportes.Size = new System.Drawing.Size(122, 69);
-            this.menuReportes.Text = "Reportes";
-            this.menuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuReportes.Click += new System.EventHandler(this.menuReportes_Click);
-            // 
-            // menuAcercaDe
-            // 
-            this.menuAcercaDe.AutoSize = false;
-            this.menuAcercaDe.IconChar = FontAwesome.Sharp.IconChar.Info;
-            this.menuAcercaDe.IconColor = System.Drawing.Color.Black;
-            this.menuAcercaDe.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuAcercaDe.IconSize = 50;
-            this.menuAcercaDe.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuAcercaDe.Name = "menuAcercaDe";
-            this.menuAcercaDe.Size = new System.Drawing.Size(122, 69);
-            this.menuAcercaDe.Text = "Acerca de";
-            this.menuAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuAcercaDe.Click += new System.EventHandler(this.menuAcercaDe_Click);
             // 
             // menuTitulo
             // 
@@ -214,6 +120,148 @@
             this.lblusuario.TabIndex = 5;
             this.lblusuario.Text = "lblusuario";
             // 
+            // menuUsuarios
+            // 
+            this.menuUsuarios.AutoSize = false;
+            this.menuUsuarios.IconChar = FontAwesome.Sharp.IconChar.UserGear;
+            this.menuUsuarios.IconColor = System.Drawing.Color.Black;
+            this.menuUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuUsuarios.IconSize = 50;
+            this.menuUsuarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuUsuarios.Name = "menuUsuarios";
+            this.menuUsuarios.Size = new System.Drawing.Size(122, 69);
+            this.menuUsuarios.Text = "Usuarios";
+            this.menuUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
+            // 
+            // menuOrdenesAnalisis
+            // 
+            this.menuOrdenesAnalisis.AutoSize = false;
+            this.menuOrdenesAnalisis.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subMenuNuevaOrden,
+            this.subMenuBuscarOrden});
+            this.menuOrdenesAnalisis.IconChar = FontAwesome.Sharp.IconChar.Syringe;
+            this.menuOrdenesAnalisis.IconColor = System.Drawing.Color.Black;
+            this.menuOrdenesAnalisis.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuOrdenesAnalisis.IconSize = 50;
+            this.menuOrdenesAnalisis.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuOrdenesAnalisis.Name = "menuOrdenesAnalisis";
+            this.menuOrdenesAnalisis.Size = new System.Drawing.Size(122, 69);
+            this.menuOrdenesAnalisis.Text = "Ordenes Análisis";
+            this.menuOrdenesAnalisis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // subMenuNuevaOrden
+            // 
+            this.subMenuNuevaOrden.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuNuevaOrden.IconColor = System.Drawing.Color.Black;
+            this.subMenuNuevaOrden.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuNuevaOrden.Name = "subMenuNuevaOrden";
+            this.subMenuNuevaOrden.Size = new System.Drawing.Size(180, 22);
+            this.subMenuNuevaOrden.Text = "Nueva Orden";
+            this.subMenuNuevaOrden.Click += new System.EventHandler(this.subMenuNuevaOrden_Click);
+            // 
+            // subMenuBuscarOrden
+            // 
+            this.subMenuBuscarOrden.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuBuscarOrden.IconColor = System.Drawing.Color.Black;
+            this.subMenuBuscarOrden.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuBuscarOrden.Name = "subMenuBuscarOrden";
+            this.subMenuBuscarOrden.Size = new System.Drawing.Size(180, 22);
+            this.subMenuBuscarOrden.Text = "Buscar Orden";
+            this.subMenuBuscarOrden.Click += new System.EventHandler(this.subMenuBuscarOrden_Click);
+            // 
+            // menuPacientes
+            // 
+            this.menuPacientes.AutoSize = false;
+            this.menuPacientes.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            this.menuPacientes.IconColor = System.Drawing.Color.Black;
+            this.menuPacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuPacientes.IconSize = 50;
+            this.menuPacientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuPacientes.Name = "menuPacientes";
+            this.menuPacientes.Size = new System.Drawing.Size(122, 69);
+            this.menuPacientes.Text = "Pacientes";
+            this.menuPacientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuPacientes.Click += new System.EventHandler(this.menuPacientes_Click);
+            // 
+            // menuResultados
+            // 
+            this.menuResultados.AutoSize = false;
+            this.menuResultados.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subMenuSubirResultado,
+            this.subMenuBuscarResultado});
+            this.menuResultados.IconChar = FontAwesome.Sharp.IconChar.FlaskVial;
+            this.menuResultados.IconColor = System.Drawing.Color.Black;
+            this.menuResultados.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuResultados.IconSize = 50;
+            this.menuResultados.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuResultados.Name = "menuResultados";
+            this.menuResultados.Size = new System.Drawing.Size(122, 69);
+            this.menuResultados.Text = "Resultados";
+            this.menuResultados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // subMenuSubirResultado
+            // 
+            this.subMenuSubirResultado.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuSubirResultado.IconColor = System.Drawing.Color.Black;
+            this.subMenuSubirResultado.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuSubirResultado.Name = "subMenuSubirResultado";
+            this.subMenuSubirResultado.Size = new System.Drawing.Size(180, 22);
+            this.subMenuSubirResultado.Text = "Subir Resultado";
+            this.subMenuSubirResultado.Click += new System.EventHandler(this.subMenuSubirResultado_Click);
+            // 
+            // subMenuBuscarResultado
+            // 
+            this.subMenuBuscarResultado.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.subMenuBuscarResultado.IconColor = System.Drawing.Color.Black;
+            this.subMenuBuscarResultado.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.subMenuBuscarResultado.Name = "subMenuBuscarResultado";
+            this.subMenuBuscarResultado.Size = new System.Drawing.Size(180, 22);
+            this.subMenuBuscarResultado.Text = "Buscar Resultado";
+            this.subMenuBuscarResultado.Click += new System.EventHandler(this.subMenuBuscarResultado_Click);
+            // 
+            // menuTiposDeAnalisis
+            // 
+            this.menuTiposDeAnalisis.AutoSize = false;
+            this.menuTiposDeAnalisis.IconChar = FontAwesome.Sharp.IconChar.ListUl;
+            this.menuTiposDeAnalisis.IconColor = System.Drawing.Color.Black;
+            this.menuTiposDeAnalisis.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuTiposDeAnalisis.IconSize = 50;
+            this.menuTiposDeAnalisis.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuTiposDeAnalisis.Name = "menuTiposDeAnalisis";
+            this.menuTiposDeAnalisis.Size = new System.Drawing.Size(122, 69);
+            this.menuTiposDeAnalisis.Text = "Tipos de Análisis";
+            this.menuTiposDeAnalisis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuTiposDeAnalisis.Click += new System.EventHandler(this.menuTiposDeAnalisis_Click);
+            // 
+            // menuReportes
+            // 
+            this.menuReportes.AutoSize = false;
+            this.menuReportes.IconChar = FontAwesome.Sharp.IconChar.FileMedical;
+            this.menuReportes.IconColor = System.Drawing.Color.Black;
+            this.menuReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuReportes.IconSize = 50;
+            this.menuReportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuReportes.Name = "menuReportes";
+            this.menuReportes.Size = new System.Drawing.Size(122, 69);
+            this.menuReportes.Text = "Reportes";
+            this.menuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuReportes.Click += new System.EventHandler(this.menuReportes_Click);
+            // 
+            // menuAcercaDe
+            // 
+            this.menuAcercaDe.AutoSize = false;
+            this.menuAcercaDe.IconChar = FontAwesome.Sharp.IconChar.Info;
+            this.menuAcercaDe.IconColor = System.Drawing.Color.Black;
+            this.menuAcercaDe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuAcercaDe.IconSize = 50;
+            this.menuAcercaDe.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuAcercaDe.Name = "menuAcercaDe";
+            this.menuAcercaDe.Size = new System.Drawing.Size(122, 69);
+            this.menuAcercaDe.Text = "Acerca de";
+            this.menuAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuAcercaDe.Click += new System.EventHandler(this.menuAcercaDe_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,6 +300,10 @@
         private System.Windows.Forms.Panel contenedor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblusuario;
+        private FontAwesome.Sharp.IconMenuItem subMenuNuevaOrden;
+        private FontAwesome.Sharp.IconMenuItem subMenuBuscarOrden;
+        private FontAwesome.Sharp.IconMenuItem subMenuSubirResultado;
+        private FontAwesome.Sharp.IconMenuItem subMenuBuscarResultado;
     }
 }
 

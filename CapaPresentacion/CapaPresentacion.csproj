@@ -59,11 +59,23 @@
     <Compile Include="frmAcercaDe.Designer.cs">
       <DependentUpon>frmAcercaDe.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAnalisis.cs">
+    <Compile Include="frmAgregarAnalisis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAnalisis.Designer.cs">
-      <DependentUpon>frmAnalisis.cs</DependentUpon>
+    <Compile Include="frmAgregarAnalisis.Designer.cs">
+      <DependentUpon>frmAgregarAnalisis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarAnalisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarAnalisis.Designer.cs">
+      <DependentUpon>frmBuscarAnalisis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarResultados.Designer.cs">
+      <DependentUpon>frmBuscarResultados.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPacientes.cs">
       <SubType>Form</SubType>
@@ -77,11 +89,11 @@
     <Compile Include="frmReportes.Designer.cs">
       <DependentUpon>frmReportes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmResultados.cs">
+    <Compile Include="frmSubirResultados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmResultados.Designer.cs">
-      <DependentUpon>frmResultados.cs</DependentUpon>
+    <Compile Include="frmSubirResultados.Designer.cs">
+      <DependentUpon>frmSubirResultados.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTiposAnalisis.cs">
       <SubType>Form</SubType>
@@ -113,8 +125,11 @@
     <EmbeddedResource Include="frmAcercaDe.resx">
       <DependentUpon>frmAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAnalisis.resx">
-      <DependentUpon>frmAnalisis.cs</DependentUpon>
+    <EmbeddedResource Include="frmAgregarAnalisis.resx">
+      <DependentUpon>frmAgregarAnalisis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarAnalisis.resx">
+      <DependentUpon>frmBuscarAnalisis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPacientes.resx">
       <DependentUpon>frmPacientes.cs</DependentUpon>
@@ -122,8 +137,8 @@
     <EmbeddedResource Include="frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmResultados.resx">
-      <DependentUpon>frmResultados.cs</DependentUpon>
+    <EmbeddedResource Include="frmSubirResultados.resx">
+      <DependentUpon>frmSubirResultados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTiposAnalisis.resx">
       <DependentUpon>frmTiposAnalisis.cs</DependentUpon>

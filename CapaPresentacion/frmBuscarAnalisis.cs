@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class frmResultados : Form
+    public partial class frmBuscarAnalisis : Form
     {
-        public frmResultados()
+        public frmBuscarAnalisis()
         {
             InitializeComponent();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

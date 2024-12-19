@@ -14,6 +14,7 @@ namespace CapaEntidad
         public decimal precio_comun { get; set; }
         public decimal precio_derivado { get; set; }
         public decimal precio_sucursal { get; set; }
+        public string muestra { get; set; }
         public string fecha_creacion { get; set; }
     }
 }
